@@ -14,17 +14,39 @@
 
 <div class="container">
 
-  <h1>Clicked {{ 2 + 2 }} times</h1>
+  <h1>Clicked {{ count }} times</h1>
   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">modal</button>
-  <button class="btn btn-success">launch script</button>
+  <button class="btn btn-success">test script</button>
 
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <textarea name="name" rows="8" cols="68"></textarea>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal 1</h4>
+        </div>
+        <div class="modal-body">
+          <p>Click next or die</p>
+        </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-info">next modal</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal 2</h4>
+        </div>
+        <div class="modal-body">
+          <textarea name="name" class="form-control" rows="8" cols="68"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Finish</button>
         </div>
       </div>
     </div>
