@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Clicked {{ 2 + 2 }} times</h1>
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">modal</button>
+  <button class="btn btn-success">launch script</button>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <textarea name="name" rows="8" cols="68"></textarea>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info">next modal</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
